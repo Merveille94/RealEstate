@@ -1,7 +1,8 @@
-function App() {
+import React from 'react'
 
+const App = () => {
   return (
-    <div className="w-screen h-screen bg-red-300"></div>
+    <div>App</div>
   )
 }
 
