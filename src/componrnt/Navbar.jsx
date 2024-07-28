@@ -3,7 +3,7 @@ import logo from "../assets/images/logo.png"
 const Navbar = () => {
   return (
     <header className="p-4">
-      <div className="container mx-auto px-4 ">
+      <div className="md:container md:mx-auto px-4 ">
         <div className="flex items-center justify-between">
           <div className="pr-4 pl-4">
             <div className="text-xl font-bold">
