@@ -15,12 +15,7 @@ const Navbar = () => {
               <img src={Logo_1} alt="logo" className="h-9 w-auto" />
             </a>
             
-            <div className="md:ml-auto">
-
-                <div className="md:hidden">
-                 <button className="text-white"><HiMenu/></button>
-                </div>
-                
+            <div className="md:ml-auto">   
                 <ul className="hidden md:flex space-x-2">
                   <li><a href="/index.html" className="text-white hover:text-lime-300 px-3 py-2">Home</a></li>
                   <li><a href="" className="text-white hover:text-lime-300 px-3 py-2">Agents</a></li>
@@ -29,6 +24,10 @@ const Navbar = () => {
                   <li><a href="" className="text-white hover:text-lime-300 px-3 py-2">Blog</a></li>
                   <li><a href="" className="text-white hover:text-lime-300 px-3 py-2">Contact</a></li>
                 </ul>
+            </div>
+
+            <div className="md:hidden ml-auto">
+                 <button className="text-white"><HiMenu/></button>
             </div>
           </div>
         </div>
