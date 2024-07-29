@@ -1,4 +1,4 @@
-import Navbar from '../componrnt/Navbar'
+import Navbar from '../component/Navbar'
 import React from 'react'
 
 const Homepage = () => {
