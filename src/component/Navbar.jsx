@@ -1,5 +1,6 @@
 import React from "react";
 import Logo_1 from "../assets/Logo/logo.png";
+import { HiMenu } from "react-icons/hi";
 
 const Navbar = () => {
   return (
@@ -13,7 +14,13 @@ const Navbar = () => {
             >
               <img src={Logo_1} alt="logo" className="h-9 w-auto" />
             </a>
+            
             <div className="md:ml-auto">
+
+                <div className="md:hidden">
+                 <button className="text-white"><HiMenu/></button>
+                </div>
+                
                 <ul className="hidden md:flex space-x-2">
                   <li><a href="/index.html" className="text-white hover:text-lime-300 px-3 py-2">Home</a></li>
                   <li><a href="" className="text-white hover:text-lime-300 px-3 py-2">Agents</a></li>
