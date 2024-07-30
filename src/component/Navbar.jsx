@@ -11,7 +11,7 @@ const Navbar = () => {
     setIsMenuOpen(!isMenuOpen) // !false = true
   }
 
-  console.log(isMenuOpen);
+  // console.log(isMenuOpen);
 
   return (
     <nav className="bg-slate-600">
@@ -42,6 +42,18 @@ const Navbar = () => {
           </div>
         </div>
       </div>
+
+      {/* Mobile Menu */}
+      {isMenuOpen ? (
+                      <ul className="flex-col md:hidden">
+                        <li className="py-3 hover:border border-slate-500"><a href="/index.html" className="text-white hover:text-lime-300 px-3 py-2">Home</a></li>
+                        <li className="py-3 hover:border border-slate-500"><a href="" className="text-white hover:text-lime-300 px-3 py-2">Agents</a></li>
+                        <li className="py-3 hover:border border-slate-500"><a href="" className="text-white hover:text-lime-300 px-3 py-2">Property</a></li>
+                        <li className="py-3 hover:border border-slate-500"><a href="" className="text-white hover:text-lime-300 px-3 py-2">About</a></li>
+                        <li className="py-3 hover:border border-slate-500"><a href="" className="text-white hover:text-lime-300 px-3 py-2">Blog</a></li>
+                        <li className="py-3 hover:border border-slate-500"><a href="" className="text-white hover:text-lime-300 px-3 py-2">Contact</a></li>
+                      </ul>
+      ) : null}
     </nav>
   );
 };
