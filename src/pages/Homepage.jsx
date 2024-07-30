@@ -1,3 +1,4 @@
+import FormSide from '../component/FormSide'
 import Hero from '../component/Hero'
 import Navbar from '../component/Navbar'
 import React from 'react'
@@ -7,6 +8,7 @@ const Homepage = () => {
     <>
       <Navbar/>
       <Hero/>
+      <FormSide/>
     </>
   )
 }

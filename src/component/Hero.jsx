@@ -3,7 +3,7 @@ import { FaMapMarkerAlt, FaExpand, FaBed, FaBath } from 'react-icons/fa';
 
 const Hero = () => {
   return (
-    <div className="relative bg-hero-image bg-fixed h-screen bg-contain bg-no-repeat pt-8 lg:pt-48 2xl:bg-cover">
+    <div className="relative bg-hero-image bg-fixed h-70v bg-contain bg-no-repeat pt-16 lg:pt-48 2xl:bg-cover">
       {/* Overlay */}
       <div className="absolute inset-0 bg-black opacity-60"></div>
       <div className="container mx-auto relative z-10">
