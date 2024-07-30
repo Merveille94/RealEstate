@@ -45,13 +45,13 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       {isMenuOpen ? (
-                      <ul className="flex-col md:hidden text-center">
-                        <li className="py-3 hover:border border-slate-500"><a href="/index.html" className="text-white hover:text-lime-300 px-3 py-2">Home</a></li>
-                        <li className="py-3 hover:border border-slate-500"><a href="" className="text-white hover:text-lime-300 px-3 py-2">Agents</a></li>
-                        <li className="py-3 hover:border border-slate-500"><a href="" className="text-white hover:text-lime-300 px-3 py-2">Property</a></li>
-                        <li className="py-3 hover:border border-slate-500"><a href="" className="text-white hover:text-lime-300 px-3 py-2">About</a></li>
-                        <li className="py-3 hover:border border-slate-500"><a href="" className="text-white hover:text-lime-300 px-3 py-2">Blog</a></li>
-                        <li className="py-3 hover:border border-slate-500"><a href="" className="text-white hover:text-lime-300 px-3 py-2">Contact</a></li>
+                      <ul className="flex-col rounded-md md:hidden text-center backdrop-blur-sm bg-white/15">
+                        <li className="py-3 rounded-md hover:border border-lime-300"><a href="/index.html" className="text-white hover:text-lime-300 px-3 py-2">Home</a></li>
+                        <li className="py-3 rounded-md hover:border border-lime-300"><a href="" className="text-white hover:text-lime-300 px-3 py-2">Agents</a></li>
+                        <li className="py-3 rounded-md hover:border border-lime-300"><a href="" className="text-white hover:text-lime-300 px-3 py-2">Property</a></li>
+                        <li className="py-3 rounded-md hover:border border-lime-300"><a href="" className="text-white hover:text-lime-300 px-3 py-2">About</a></li>
+                        <li className="py-3 rounded-md hover:border border-lime-300"><a href="" className="text-white hover:text-lime-300 px-3 py-2">Blog</a></li>
+                        <li className="py-3 rounded-md hover:border border-lime-300"><a href="" className="text-white hover:text-lime-300 px-3 py-2">Contact</a></li>
                       </ul>
       ) : null}
     </nav>
