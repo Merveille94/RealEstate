@@ -1,8 +1,18 @@
-import React from "react";
+import React, {useState} from "react";
 import Logo_1 from "../assets/Logo/logo.png";
 import { HiMenu } from "react-icons/hi";
 
 const Navbar = () => {
+
+
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen) // !false = true
+  }
+
+  console.log(isMenuOpen);
+
   return (
     <nav className="bg-slate-600">
       <div className="md:container md:mx-auto max-w-7xl px-2 sm:px:6 lg:px-8">
@@ -27,7 +37,7 @@ const Navbar = () => {
             </div>
 
             <div className="md:hidden ml-auto">
-                 <button className="text-white"><HiMenu/></button>
+                 <button className="text-white" onClick={toggleMenu}><HiMenu className="text-2xl"/></button>
             </div>
           </div>
         </div>
