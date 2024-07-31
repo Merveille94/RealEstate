@@ -45,7 +45,7 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       {isMenuOpen ? (
-                      <ul className="flex-col rounded-md md:hidden text-center backdrop-blur-sm bg-white/5">
+                      <ul className="flex-col rounded-md lg:hidden text-center backdrop-blur-sm bg-white/5">
                         <li className="py-3 rounded-md hover:border border-lime-300"><a href="/index.html" className="text-white hover:text-lime-300 px-3 py-2">Home</a></li>
                         <li className="py-3 rounded-md hover:border border-lime-300"><a href="" className="text-white hover:text-lime-300 px-3 py-2">Agents</a></li>
                         <li className="py-3 rounded-md hover:border border-lime-300"><a href="" className="text-white hover:text-lime-300 px-3 py-2">Property</a></li>

@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import Button from './Button';
+
 
 const FormSide = () => {
   const [activeTab, setActiveTab] = useState('rent');
@@ -31,18 +33,18 @@ const FormSide = () => {
           </div>
         </div>
       </div>
+
       <div className="pb-5 bg-customGreen">
         <div className="container mx-auto px-16 sm:px:6 lg:px-8">
           {activeTab === 'rent' && (
             <div
-              className="tab-pane active"
+              className="tab-pane active grid grid-cols-3 gap-4"
               id="for-rent"
               role="tabpanel"
               aria-labelledby="rent-tab"
             >
-              <div className="row">
-                <div className="col-md-4 form-group">
-                  <select className="form-control w-full">
+                <div className="px-0">
+                  <select className="px-9 py-4 rounded-md">
                     <option value="">All Types</option>
                     <option value="">Townhouses</option>
                     <option value="">Duplexes</option>
@@ -50,16 +52,17 @@ const FormSide = () => {
                     <option value="">Condominiums</option>
                   </select>
                 </div>
-                <div className="col-md-4 form-group">
-                  <input type="text" className="form-control" placeholder="Title" />
+
+                <div className="px-0">
+                  <input type="text" className="form-control px-3 py-4 rounded-md" placeholder="Title" />
                 </div>
-                <div className="col-md-4 form-group">
-                  <input type="text" className="form-control" placeholder="Address" />
+
+                <div className="px-0">
+                  <input type="text" className="form-control px-3 py-4 rounded-md" placeholder="Address" />
                 </div>
-              </div>
-              <div className="row">
-                <div className="col-md-4 form-group">
-                  <select className="form-control w-full">
+
+                <div className="px-0">
+                  <select className="px-9 py-4 rounded-md">
                     <option value="">Any Bedrooms</option>
                     <option value="">0</option>
                     <option value="">1</option>
@@ -67,8 +70,9 @@ const FormSide = () => {
                     <option value="">3+</option>
                   </select>
                 </div>
-                <div className="col-md-4 form-group">
-                  <select className="form-control w-full">
+
+                <div className="px-0">
+                  <select className="px-9 py-4 rounded-md">
                     <option value="">Any Bathrooms</option>
                     <option value="">0</option>
                     <option value="">1</option>
@@ -76,10 +80,11 @@ const FormSide = () => {
                     <option value="">3+</option>
                   </select>
                 </div>
-                <div className="col-md-4 form-group">
-                  <div className="row">
-                    <div className="col-md-6 form-group">
-                      <select className="form-control w-full">
+
+                <div className="flex justify-between">
+
+                <div className="ps-0">
+                      <select className="py-4 rounded-md">
                         <option value="">Min Price</option>
                         <option value="">$100</option>
                         <option value="">$200</option>
@@ -87,8 +92,9 @@ const FormSide = () => {
                         <option value="">$400</option>
                       </select>
                     </div>
-                    <div className="col-md-6 form-group">
-                      <select className="form-control w-full">
+
+                    <div className="ps-2">
+                      <select className="py-4 rounded-md">
                         <option value="">Max Price</option>
                         <option value="">$25,000</option>
                         <option value="">$50,000</option>
@@ -97,19 +103,10 @@ const FormSide = () => {
                         <option value="">$100,000,000</option>
                       </select>
                     </div>
-                  </div>
                 </div>
-              </div>
-              <div className="row">
-                <div className="col-md-4">
-                  <input
-                    type="submit"
-                    className="btn btn-black py-3 w-full"
-                    value="Submit"
-                  />
-                </div>
-              </div>
-            </div>
+
+                    <Button content='Submit' bg='bg-black'/>
+          </div>
           )}
           {activeTab === 'sale' && (
             <div
@@ -122,6 +119,7 @@ const FormSide = () => {
                 <div className="col-md-4 form-group">
                   <select className="form-control w-full">
                     <option value="">All Types</option>
+                    <option value="">Land</option>
                     <option value="">Townhouses</option>
                     <option value="">Duplexes</option>
                     <option value="">Quadplexes</option>
