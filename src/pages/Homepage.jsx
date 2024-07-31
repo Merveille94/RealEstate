@@ -1,4 +1,4 @@
-import Button from '../component/Button'
+import AboutUs from '../component/AboutUs'
 import FormSide from '../component/FormSide'
 import Hero from '../component/Hero'
 import Navbar from '../component/Navbar'
@@ -10,6 +10,7 @@ const Homepage = () => {
       <Navbar/>
       <Hero/>
       <FormSide/>
+      <AboutUs/>
     </>
   )
 }
