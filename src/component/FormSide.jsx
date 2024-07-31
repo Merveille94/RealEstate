@@ -12,7 +12,7 @@ const FormSide = () => {
           <div className="transform -translate-y-full relative z-10">
             <a
               href="#for-rent"
-              className={`px-8 py-4 inline-block ${activeTab === 'rent' ? 'bg-customGreen text-white' : 'bg-white text-customGreen'}`}
+              className={`px-4 py-4 inline-block ${activeTab === 'rent' ? 'bg-customGreen text-white' : 'bg-white text-customGreen'}`}
               onClick={() => setActiveTab('rent')}
               id="rent-tab"
               aria-controls="rent"
@@ -22,7 +22,7 @@ const FormSide = () => {
             </a>
             <a
               href="#for-sale"
-              className={`px-8 py-4 inline-block ${activeTab === 'sale' ? 'bg-customGreen text-white' : 'bg-white text-customGreen'}`}
+              className={`px-4 py-4 inline-block ${activeTab === 'sale' ? 'bg-customGreen text-white' : 'bg-white text-customGreen'}`}
               onClick={() => setActiveTab('sale')}
               id="sale-tab"
               aria-controls="sale"
