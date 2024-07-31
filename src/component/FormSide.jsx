@@ -8,11 +8,11 @@ const FormSide = () => {
   return (
     <form action="">
       <div className="bg-customGreen">
-        <div className="container mx-auto px-16 sm:px:6 lg:px-8">
+        <div className="container mx-auto px-16">
           <div className="transform -translate-y-full relative z-10">
             <a
               href="#for-rent"
-              className={`px-4 py-2 inline-block ${activeTab === 'rent' ? 'bg-customGreen text-white' : 'bg-white text-customGreen'}`}
+              className={`px-8 py-4 inline-block ${activeTab === 'rent' ? 'bg-customGreen text-white' : 'bg-white text-customGreen'}`}
               onClick={() => setActiveTab('rent')}
               id="rent-tab"
               aria-controls="rent"
@@ -22,7 +22,7 @@ const FormSide = () => {
             </a>
             <a
               href="#for-sale"
-              className={`px-4 py-2 inline-block ${activeTab === 'sale' ? 'bg-customGreen text-white' : 'bg-white text-customGreen'}`}
+              className={`px-8 py-4 inline-block ${activeTab === 'sale' ? 'bg-customGreen text-white' : 'bg-white text-customGreen'}`}
               onClick={() => setActiveTab('sale')}
               id="sale-tab"
               aria-controls="sale"
@@ -34,11 +34,11 @@ const FormSide = () => {
         </div>
       </div>
 
-      <div className="pb-5 bg-customGreen">
-        <div className="container mx-auto px-16 sm:px:6 lg:px-8">
+      {/* <div className="pb-10 bg-customGreen">
+        <div className="container mx-auto px-16 sm:px-6 lg:px-8">
           {activeTab === 'rent' && (
             <div
-              className="tab-pane active grid grid-cols-3 gap-4"
+              className=" lg:grid lg:grid-cols-3 lg:gap-4"
               id="for-rent"
               role="tabpanel"
               aria-labelledby="rent-tab"
@@ -188,7 +188,46 @@ const FormSide = () => {
             </div>
           )}
         </div>
+      </div> */}
+
+<div className="bg-customGreen pb-24">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 container mx-auto">
+        <select className="border border-gray-300 rounded-md px-3 py-5">
+          <option>All Types</option>
+          {/* Add more options */}
+        </select>
+        <input
+          type="text"
+          className="border border-gray-300 rounded-md px-3 py-5"
+          placeholder="Title"
+        />
+        <input
+          type="text"
+          className="border border-gray-300 rounded-md px-3 py-5"
+          placeholder="Address"
+        />
+        <select className="border border-gray-300 rounded-md px-3 py-5">
+          <option>Any Bedrooms</option>
+          {/* Add more options */}
+        </select>
+        <select className="border border-gray-300 rounded-md px-3 py-4">
+          <option>Any Bathrooms</option>
+          {/* Add more options */}
+        </select>
+        <div className="grid grid-cols-2 gap-4">
+          <input
+            type="number"
+            className="border border-gray-300 rounded-md px-2 py-4"
+            placeholder="Min Price"
+          />
+          <input
+            type="number"
+            className="border border-gray-300 rounded-md px-2 py-4"
+            placeholder="Max Price"
+          />
+        </div>
       </div>
+    </div>
     </form>
   );
 };
