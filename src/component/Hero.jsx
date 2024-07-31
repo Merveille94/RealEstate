@@ -1,9 +1,10 @@
 import React from 'react';
 import { FaMapMarkerAlt, FaExpand, FaBed, FaBath } from 'react-icons/fa';
+import Button from './Button';
 
 const Hero = () => {
   return (
-    <div className="relative bg-hero-image bg-fixed h-70v bg-contain bg-no-repeat pt-16 lg:pt-48 2xl:bg-cover">
+    <div className="relative bg-hero-image bg-fixed h-55v  bg-contain bg-no-repeat pt-16 lg:pt-48 2xl:bg-cover">
       {/* Overlay */}
       <div className="absolute inset-0 bg-black opacity-60"></div>
       <div className="container mx-auto relative z-10">
@@ -31,11 +32,7 @@ const Hero = () => {
                 <span className='text-xs'>3</span>
               </div>
             </div>
-            <p>
-              <a href="#" className="rounded-md bg-customGreen text-slate-100 text-sm px-4 py-3">
-                Learn More
-              </a>
-            </p>
+            <Button/>
           </div>
         </div>
       </div>

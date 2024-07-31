@@ -1,3 +1,4 @@
+import Button from '../component/Button'
 import FormSide from '../component/FormSide'
 import Hero from '../component/Hero'
 import Navbar from '../component/Navbar'
