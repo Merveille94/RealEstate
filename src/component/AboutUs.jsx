@@ -40,7 +40,7 @@ const AboutUs = () => {
               </div>
             </div>
           </div>
-          <div className="col-lg-5 ml-auto">
+          <div className="container ml-auto">
             <h3 className="heading-29201">About Us</h3>
             <p className="mb-5">Perspiciatis quidem harum provident repellat sint.</p>
             <div className="service-39290 d-flex align-items-start mb-5">
