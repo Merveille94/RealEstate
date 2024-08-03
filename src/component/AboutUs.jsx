@@ -20,7 +20,7 @@ const AboutUs = () => {
                   <div className="text-slate-200">
                     <FaBath size={64} className="mx-auto text-customGreen pb-2" />
                     <h3 className='uppercase'>Elegant Bathtub</h3>
-                    <p>Estate Managements</p>
+                    <p>Estate Management</p>
                   </div>
                 </div>
                 <div className="col-md-6 text-center mb-4">
@@ -42,7 +42,7 @@ const AboutUs = () => {
           </div>
           <div className="container ml-auto">
             <h3 className="heading-29201">About Us</h3>
-            <p className="mb-5">Perspiciatis quidem harum provident repellat sint.</p>
+            <p className="mb-5">Perspiciatis quidem haru provident repellat sint.</p>
             <div className="service-39290 d-flex align-items-start mb-5">
               <div className="media-icon mr-4">
                 <FaHome size={32} />
