@@ -13,14 +13,14 @@ const AboutUs = () => {
                   <div className="text-slate-200">
                     <FaHome size={64} className="mx-auto text-customGreen pb-2" />
                     <h3 className='uppercase'>Estate Insurance</h3>
-                    <p>Estate Management</p>
+                    <p>Estate Managements</p>
                   </div>
                 </div>
                 <div className="col-md-6 text-center mb-24">
                   <div className="text-slate-200">
                     <FaBath size={64} className="mx-auto text-customGreen pb-2" />
                     <h3 className='uppercase'>Elegant Bathtub</h3>
-                    <p>Estate Management</p>
+                    <p>Estate Managements</p>
                   </div>
                 </div>
                 <div className="col-md-6 text-center mb-4">
